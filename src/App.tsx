@@ -46,6 +46,7 @@ function App() {
         return () => {
             document.removeEventListener("keypress", handler)
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [guessedLetters])
 
     useEffect(() => {
